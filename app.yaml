@@ -1,0 +1,22 @@
+application: tweets-ticker
+version: 1
+runtime: php
+api_version: 1
+
+handlers:
+- url: /images
+  static_dir: images
+
+- url: /js
+  static_dir: js
+
+- url: /css
+  static_dir: css
+
+- url: /(.+\.(json))$
+  static_files: \1
+  upload: .+\.(json)$
+  application_readable: true
+
+- url: /.*
+  script: index.php

@@ -1,0 +1,23 @@
+.tweet-text {
+	word-wrap: break-word;
+}
+
+.template {
+	display: none;
+}
+
+html, body {
+	height: 100%;
+}
+
+#canvas {
+	height: 90%;
+}
+
+#canvas_title {
+	height: 8%;
+}
+
+.map-figure{
+	height: 80%;
+}
